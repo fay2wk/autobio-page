@@ -1,0 +1,178 @@
+@import url("./_reset.css")
+
+{}
+body {
+  background-color: black;
+  font-family: 'Lucida Sans Typewriter', 'Lucida Console', monaco, 'Bitstream Vera Sans Mono', monospace;
+  color: white;
+  margin: 0;
+  padding: 0;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+/* Option to set properties for different pages
+#page1 {
+height: 800px;
+} */
+
+.main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 2% 2%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  font-size: 1.7em;
+  font-weight: bolder;
+}
+
+ul {
+  list-style-type: none;
+  margin: 10% 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  font-weight: bolder;
+  margin-right: 5%;
+}
+
+a:link {
+  color: white;
+  transition: all 1s ease;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #a01d22;
+}
+
+a:hover {
+  font-size: 1.1em;
+  color: #0a4fa4;
+}
+
+pre {
+  display: flex;
+  flex-direction: column;
+}
+
+.txt {
+  transition: all  0.5s ease;
+  margin: 0;
+}
+
+.txt.y:hover {
+  transform: scale(1.1);
+  color: yellow;
+}
+
+.txt.r:hover {
+  transform: scale(1.1);
+  color: red;
+}
+
+.txt.g:hover {
+  transform: scale(1.1);
+  color: #00cd00;
+}
+
+.txt.b:hover {
+  transform: scale(1.1);
+  color: blue;
+}
+
+/* Option to set properties for different pages
+#page2 {
+height: 800px;
+} */
+
+.main-2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 18% 2%;
+}
+
+.img-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+img {
+  display: flex;
+  flex-grow: 1;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  border-color: white;
+  border-top-style: ridge;
+  padding: 10px;
+  margin-top: 3%;
+}
+
+h3 {
+  font-size: 1.8em;
+  font-weight: bolder;
+  color: #3b72b6;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+blockquote {
+  background: #dcdcdc;
+  opacity: 0.7;
+  border-left: 10px solid #7a7a7a;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  color: black;
+  font-size: 1.7em;
+  font-weight: bolder;
+}
+blockquote:before {
+  color: #7a7a7a;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+}
+blockquote:after {
+  color: #7a7a7a;
+  content: close-quote;
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+footer {
+  display:flex;
+  flex-direction: column;
+  margin-top: 5%;
+  border-top: 1px white solid;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
